@@ -5,10 +5,7 @@ services:
       context: .
     command: bash -c "java -Xmx${MAX_RAM} -Xms${MIN_RAM} -jar server.jar nogui"
     ports:
-      - 1000:25565
-    environment:
-      - MIN_RAM=1G
-      - MAX_RAM=2G
+      - ${LOCAL_PORT}:25565
     volumes:
       - minecraft_v:/home/mnsrvr
 volumes:
