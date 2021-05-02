@@ -1,1 +1,5 @@
+crash-results
+world/*
+
 .env
+server.properties
