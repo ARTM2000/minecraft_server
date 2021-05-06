@@ -8,3 +8,4 @@ services:
       - ${LOCAL_PORT}:25565
     volumes:
       - ./:/home/mnsrvr
+    restart: unless-stopped
